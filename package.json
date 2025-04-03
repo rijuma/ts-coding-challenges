@@ -1,0 +1,21 @@
+{
+  "name": "coding-challenges",
+  "version": "0.0.1",
+  "author": "Marcos Rigoli",
+  "license": "MIT",
+  "description": "Just a repo with some coding challenges that I'm eventually practicing",
+  "scripts": {
+    "test": "vitest --root ./challenges",
+    "test:coverage": "vitest --coverage --root ./challenges",
+    "test:solutions": "vitest run --root ./solutions",
+    "test:solutions:coverage": "vitest run --coverage --root ./solutions"
+  },
+  "jest": {
+    "verbose": true
+  },
+  "devDependencies": {
+    "@vitest/coverage-v8": "^3.1.1",
+    "typescript": "^5.8.2",
+    "vitest": "^3.1.1"
+  }
+}
