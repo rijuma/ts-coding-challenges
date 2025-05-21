@@ -21,7 +21,7 @@ const cases: [string, string[]][] = [
 ]
 
 describe('Keypad combination', () => {
-  it.each(cases)('should input %i should return %o', (input, expected) => {
-    expect(getCodeVariations(input)).toBe(expected)
+  it.each(cases)("input '%i' should return variants: %o", (input, expected) => {
+    expect(getCodeVariations(input)).toEqual(expected)
   })
 })
